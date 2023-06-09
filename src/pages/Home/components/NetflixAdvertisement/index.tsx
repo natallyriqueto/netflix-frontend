@@ -1,21 +1,56 @@
-import { AdvertisementContent } from './styles';
+import { AdvertisementContent, AdvertisementContainer, PageBreak } from './styles';
 
-interface PropsData {
-    title: string;
-    description: string;
-    imgName: string;
+
+interface advertisementContentType {
+	title: string;
+	description: string;
+	imgName: string;
 }
 
-export function NetflixAdvertisement({ title, description, imgName}: PropsData) {
+const advertisementTextContent: advertisementContentType[] = [
+	{
+		title: 'Enjoy on your TV',
+		description: 'Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.',
+		imgName: 'advertisement-tv.png' 
+	},
+	{
+		title:'Watch everywhere',
+		description:'Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.' ,
+		imgName: 'watch-everywhere-img.png'
+	},
+	{
+		title:'Create profiles for kids',
+		description:'Send kids on adventures with their favorite characters in a space made just for them—free with your membership.', 
+		imgName: 'kids-profile-img.png'
+	},
+	{
+		title:'Download your shows to watch offline',
+		description:'Only available on ad-free plans.', 
+		imgName: 'watch-offline-img.jpg' 	
+	},
+];
+
+export function NetflixAdvertisement() {
+	const imgPath = 'src/assets/';
+
 	return (
-		<AdvertisementContent>
-			<section>
-				<h1>{title}</h1>
-				<p>{description}</p>
-			</section>
-			<section>
-			    <img src={imgName} alt="tv"/>
-			</section>
-		</AdvertisementContent>
+		<AdvertisementContainer>
+			{advertisementTextContent.map(item => {
+				return (
+					<>
+						<AdvertisementContent>
+							<section>
+								<h1>{item.title}</h1>
+								<p>{item.description}</p>
+							</section>
+							<section>
+								<img src={imgPath + item.imgName} alt="tv"/>
+							</section>
+						</AdvertisementContent>
+						<PageBreak />
+					</>
+				);
+			})}
+		</AdvertisementContainer>
 	);
 }

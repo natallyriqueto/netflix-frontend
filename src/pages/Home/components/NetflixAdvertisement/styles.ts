@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
-export const AdvertisementContent = styled.div`
 
+
+export const AdvertisementContainer = styled.div`
+    :nth-child(even) {
+        justify-content: flex-end;
+    }
+`;
+export const AdvertisementContent = styled.div`
     max-width: 66.66666666666666%;   
     display: flex;
     flex-basis: 50%;
@@ -9,7 +15,7 @@ export const AdvertisementContent = styled.div`
     gap: 3rem;
     align-items: center;
     margin: 0 auto;
-
+  
     section {
         flex-basis: 50%;
 
@@ -36,5 +42,10 @@ export const AdvertisementContent = styled.div`
         }
 
     }
+`;
 
+export const PageBreak = styled.div`
+    background-color: ${props => props.theme['gray-600']};
+    height: 0.5rem;
+    margin: 3rem;
 `;
