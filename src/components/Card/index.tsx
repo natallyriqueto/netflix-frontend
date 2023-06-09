@@ -5,11 +5,11 @@ export function Card() {
 	return (
 		<CardContainer>
 			<CardOverlay />
-			<div>
+			<section>
 				<h1>Unlimited movies, tv shows and more</h1>
 				<h3>Watch anywhere. Cancel anytime.</h3>
 				<Register />
-			</div>
+			</section>
 		</CardContainer>
 	);
 }

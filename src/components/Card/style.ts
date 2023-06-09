@@ -22,7 +22,7 @@ export const CardContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    div {
+    section {
         width: 100%;
 
         display: flex;
@@ -33,15 +33,9 @@ export const CardContainer = styled.div`
         z-index: 2;
         text-align: center;
 
-        h3 {
-            font-size: 1.25rem;
-            font-weight: 400;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
+        @media (max-width: 950px) {
+            max-width: calc(100% - 2rem);        
         }
     }
-`;
 
+`;

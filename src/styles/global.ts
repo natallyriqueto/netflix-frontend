@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         -webkit-font-smoothing: antialiased;     
-        background-color: #121214;
+        background-color: black;
     }
 
     button {
@@ -30,7 +30,19 @@ export const GlobalStyle = createGlobalStyle`
         color: ${props => props.theme.white};
     }
 
+    h3 {
+            font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
     @media (max-width: 768px) {
-        font-size: 87.5%;
+        html {
+            font-size: 87.5%;
+        }
     }
 `;
