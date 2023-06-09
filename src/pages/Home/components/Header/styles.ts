@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-    background-color: black;
+    background-color: transparent;
     height: 5.70rem;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
 
     nav {
-        max-width: 100rem;
+        max-width: calc(66.66666666666666% - 6rem);   
         margin: auto;
         height: 100%;
         display: flex;
@@ -16,7 +20,7 @@ export const HeaderContainer = styled.header`
     div {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 1.75rem;
     }
 
     img {
@@ -24,13 +28,22 @@ export const HeaderContainer = styled.header`
         height: 6rem;
     }
 
-    @media (max-width: 1915px) {
+    @media (max-width: 1900px) {
         nav {
-            max-width: calc(100% - 4rem);        
+            max-width: calc(100% - 6rem);        
         }
     }
 
+
     @media (max-width: 768px) {
+        nav {
+            max-width: calc(100% - 2rem);        
+        }
+
+        div {
+            gap: 1rem;
+        }
+
         img {
             width: 6rem;
             height: 4rem;
@@ -39,20 +52,12 @@ export const HeaderContainer = styled.header`
 
 `;
 
-export const BaseButton = styled.button`
-    padding: 0.4rem 1rem;
-    border-radius: 4px;
-    border: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-    color: ${props => props.theme.white};
-`;
-
-export const SignInButton = styled(BaseButton)`
+export const SignInButton = styled.button`
     background-color: ${props => props.theme.red};
+    font-weight: bold;
 `;
 
-export const LanguageButton = styled(BaseButton)`
+export const LanguageButton = styled.button`
     background-color: transparent;
     align-items: center;
     display: flex;

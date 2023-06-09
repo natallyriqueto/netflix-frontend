@@ -1,7 +1,7 @@
 export const defaultTheme = {
 	white: 'rgb(255,255,255)',
 
-	'red': 'rgb(229, 9, 20)',
+	'red':  '#e50914',
 
 	'gray-200': 'rgba(255, 255, 255, 0.7)',
 	'gray-300': '#737373',

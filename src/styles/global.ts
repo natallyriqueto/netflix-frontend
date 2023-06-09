@@ -9,16 +9,25 @@ export const GlobalStyle = createGlobalStyle`
 
     :focus {
         outline: 0;
+        box-shadow: 0 0 0 2px ${props => props.theme.white};
     }
 
     body {
         -webkit-font-smoothing: antialiased;     
+        background-color: #121214;
+    }
+
+    button {
+        padding: 0.4rem 1rem;
+        border: none;
+        font-size: 0.9rem;
     }
 
     body, input, textarea, button {
         font-family: 'Roboto', sans-serif;
-        font-weight: 400;
         font-size: 1rem;
+        border-radius: 4px;
+        color: ${props => props.theme.white};
     }
 
     @media (max-width: 768px) {
