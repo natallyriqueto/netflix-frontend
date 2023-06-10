@@ -9,14 +9,26 @@ export const FooterContainer = styled.div`
 
 export const List = styled.ul`
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 0.75rem; 
-    
+
     padding: 2rem 0;
 
     list-style: none;
 
     a {
         color: ${props => props.theme['gray-200']}
+    }
+
+    @media (max-width: 1300px) {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+    @media (max-width: 972px) {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr; 
     }
 `;
