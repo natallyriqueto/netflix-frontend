@@ -9,11 +9,10 @@ export const FooterContainer = styled.div`
 
 export const List = styled.ul`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.75rem; 
 
     padding: 2rem 0;
-
     list-style: none;
 
     a {
@@ -21,11 +20,11 @@ export const List = styled.ul`
     }
 
     @media (max-width: 1300px) {
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: repeat(3, 1fr);
     }
 
     @media (max-width: 972px) {
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: repeat(2, 1fr);
     }
 
     @media (max-width: 480px) {

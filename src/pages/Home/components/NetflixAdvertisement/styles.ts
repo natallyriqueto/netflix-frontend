@@ -3,14 +3,11 @@ import styled from 'styled-components';
 
 
 export const AdvertisementContainer = styled.div`
-    :nth-child(even) {
-        justify-content: flex-end;
-    }
+  
 `;
 export const AdvertisementContent = styled.div`
     max-width: 66.66666666666666%;   
     display: flex;
-    flex-basis: 50%;
     justify-content: space-between;
     gap: 3rem;
     align-items: center;
