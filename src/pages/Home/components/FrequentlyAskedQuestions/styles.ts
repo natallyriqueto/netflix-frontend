@@ -10,7 +10,7 @@ export const QuestionsContainer = styled.div`
 
     text-align: center;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
         max-width: calc(100% - 4rem);   
     }
 `;

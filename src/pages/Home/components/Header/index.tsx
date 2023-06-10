@@ -1,6 +1,6 @@
-import { HeaderContainer, LanguageButton, SignInButton } from './styles';
+import { HeaderContainer, SignInButton } from './styles';
 import logo from '../../../../assets/netflix-logo.png';
-import { Globe, CaretDown } from 'phosphor-react';
+import { LanguageButton } from '../../../../components/LanguageButton';
 
 export function Header() {
 	return (
@@ -8,11 +8,7 @@ export function Header() {
 			<nav>
 				<img src={logo} alt="logo" />
 				<div>
-					<LanguageButton type="button">
-						<Globe size={20} />
-						English
-						<CaretDown size={20} />	
-					</LanguageButton>
+					<LanguageButton />
 					<SignInButton type="button">Sign In</SignInButton>
 				</div>
 			</nav>
