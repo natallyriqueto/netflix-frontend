@@ -30,16 +30,6 @@ export const GlobalStyle = createGlobalStyle`
         color: ${props => props.theme.white};
     }
 
-    h3 {
-            font-size: 1.25rem;
-        font-weight: 400;
-    }
-
-    h1 {
-        font-size: 3rem;
-        font-weight: 700;
-    }
-
     @media (max-width: 768px) {
         html {
             font-size: 87%;

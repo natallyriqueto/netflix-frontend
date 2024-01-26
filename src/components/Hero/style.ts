@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import backgroundImage from '../../assets/background-img.jpg';
 
-export const CardOverlay = styled.div`  
+export const HeroOverlay = styled.div`  
     position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
     min-height: inherit;
@@ -9,7 +9,7 @@ export const CardOverlay = styled.div`
     z-index: 1;
 `;
 
-export const CardContainer = styled.div`
+export const HeroContainer = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -21,21 +21,31 @@ export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+`;
 
-    section {
-        width: 100%;
+export const HeroContent = styled.section`
+    width: 100%;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 
-        z-index: 2;
-        text-align: center;
+    z-index: 2;
+    text-align: center;
 
-        @media (max-width: 950px) {
-            max-width: calc(100% - 2rem);        
-        }
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
     }
 
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    @media (max-width: 950px) {
+        max-width: calc(100% - 2rem);        
+    }
 `;
+

@@ -24,8 +24,8 @@ export const HeaderContainer = styled.header`
     }
 
     img {
-        width: 10rem;
-        height: 6rem;
+        width: 12rem;
+        height: 7rem;
     }
 
     @media (max-width: 1900px) {
@@ -55,6 +55,11 @@ export const HeaderContainer = styled.header`
 export const SignInButton = styled.button`
     background-color: ${props => props.theme.red};
     font-weight: bold;
+    cursor: pointer;
+
+    :hover {
+        background: rgb(193, 17, 25);
+    }
 `;
 
 export const LanguageButton = styled.button`

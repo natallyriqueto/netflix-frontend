@@ -1,4 +1,7 @@
-import { AdvertisementContent, AdvertisementContainer, PageBreak } from './styles';
+import { 
+	AdvertisementContent, 
+	AdvertisementContainer 
+} from './styles';
 
 
 interface advertisementContentType {
@@ -37,18 +40,15 @@ export function NetflixAdvertisement() {
 		<AdvertisementContainer>
 			{advertisementTextContent.map(item => {
 				return (
-					<>
-						<AdvertisementContent>
-							<section>
-								<h1>{item.title}</h1>
-								<p>{item.description}</p>
-							</section>
-							<section>
-								<img src={imgPath + item.imgName} alt="tv"/>
-							</section>
-						</AdvertisementContent>
-						<PageBreak />
-					</>
+					<AdvertisementContent>
+						<div>
+							<h2>{item.title}</h2>
+							<p>{item.description}</p>
+						</div>
+						<div>
+							<img src={imgPath + item.imgName} alt="tv"/>
+						</div>
+					</AdvertisementContent>
 				);
 			})}
 		</AdvertisementContainer>

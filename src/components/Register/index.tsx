@@ -8,7 +8,7 @@ export function Register() {
 			<Form>
 				<RegisterInput type="text" placeholder='Email address' />
 				<RegisterButton type='button'>
-							Get Started
+					Get Started
 					<CaretRight />
 				</RegisterButton>
 			</Form>

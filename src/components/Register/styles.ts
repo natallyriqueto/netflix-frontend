@@ -9,12 +9,11 @@ export const RegisterContainer = styled.div`
     flex-wrap: wrap;
     gap: 1rem;
 
-
     h3 {
         text-align: center;
-        font-weight: 400;
         font-size: 1.25rem;
-        line-height: 1.875rem
+        font-weight: 400;
+        line-height: 1.5;
     }
 
 `;
@@ -53,8 +52,14 @@ export const RegisterButton = styled.button`
     background-color: ${props => props.theme.red};
     font-weight: bold;
     display: flex;
+    gap: 0.5rem;
     align-items: center;
     font-size: 1.5rem;
+    cursor: pointer;
+
+    :hover {
+        background: rgb(193, 17, 25);
+    }
  `;
 
 

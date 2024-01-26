@@ -1,4 +1,4 @@
-import { LanguageButton } from '../LanguageButton';
+import { LanguageButton } from '@/components/LanguageButton';
 import { FooterContainer, List } from './styles';
 
 export function Footer() {

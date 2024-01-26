@@ -1,6 +1,12 @@
 import { useState } from 'react';
-import { Register } from '../../../../components/Register';
-import { QuestionsContainer, QuestionsAndAnswersContainer, QuestionContent, AnswerContent } from './styles';
+import { Register } from '@/components/Register';
+import { 
+	QuestionsContainer, 
+	QuestionsAndAnswersContainer, 
+	QuestionContent, 
+	AnswerContent,
+	QuestionText
+} from './styles';
 import { Plus, X } from 'phosphor-react';
 
 export function FrequentlyAskedQuestions() {
@@ -47,19 +53,19 @@ export function FrequentlyAskedQuestions() {
 
 	return (
 		<QuestionsContainer>
-			<h1>Frequently Asked Questions</h1>
+			<h2>Frequently Asked Questions</h2>
 			<div>
 				{
 					questionsAndAnswers.map(item => {
 						return (
 							<QuestionsAndAnswersContainer>
 								<QuestionContent key={item.id} onClick={() => handleToggle(item.id)}>
-									<h3>{item.question}</h3>
+									<QuestionText>{item.question}</QuestionText>
 									{isToggled && isToggledId == item.id ?  <X size={24} /> : <Plus size={24} />}
 								</QuestionContent>
 								{isToggled && isToggledId == item.id &&
 									<AnswerContent>
-										<h3>{item.answer}</h3>
+										<QuestionText>{item.answer}</QuestionText>
 									</AnswerContent>
 								}
 							</ QuestionsAndAnswersContainer>

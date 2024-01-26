@@ -1,9 +1,8 @@
-import { Card } from '../../components/Card';
-import { Footer } from '../../components/Footer';
-import { FrequentlyAskedQuestions } from './components/FrequentlyAskedQuestions';
-import { Header } from './components/Header';
-import { NetflixAdvertisement } from './components/NetflixAdvertisement';
-import { PageBreak } from './components/NetflixAdvertisement/styles';
+import { Hero } from '@/components/Hero';
+import { Footer } from '@/components/Footer';
+import { FrequentlyAskedQuestions } from '@/pages/Home/components/FrequentlyAskedQuestions';
+import { Header } from '@/pages/Home/components/Header';
+import { NetflixAdvertisement } from '@/pages/Home/components/NetflixAdvertisement';
 import { HomeContainer } from './style';
 
 export function Home() {
@@ -11,10 +10,9 @@ export function Home() {
 	return (
 		<HomeContainer>
 			<Header />
-			<Card />
+			<Hero />
 			<NetflixAdvertisement />
 			<FrequentlyAskedQuestions />
-			<PageBreak />
 			<Footer />
 		</HomeContainer>
 	);

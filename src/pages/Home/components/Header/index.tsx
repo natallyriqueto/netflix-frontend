@@ -1,6 +1,6 @@
 import { HeaderContainer, SignInButton } from './styles';
-import logo from '../../../../assets/netflix-logo.png';
-import { LanguageButton } from '../../../../components/LanguageButton';
+import logo from '@/assets/netflix-logo.png';
+import { LanguageButton } from '@/components/LanguageButton';
 
 export function Header() {
 	return (
