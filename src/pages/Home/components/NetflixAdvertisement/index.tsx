@@ -1,6 +1,7 @@
 import { 
 	AdvertisementContent, 
-	AdvertisementContainer 
+	AdvertisementContainer, 
+	ImageContainer
 } from './styles';
 
 
@@ -45,9 +46,9 @@ export function NetflixAdvertisement() {
 							<h2>{item.title}</h2>
 							<p>{item.description}</p>
 						</div>
-						<div>
+						<ImageContainer>
 							<img src={imgPath + item.imgName} alt="tv"/>
-						</div>
+						</ImageContainer>
 					</AdvertisementContent>
 				);
 			})}

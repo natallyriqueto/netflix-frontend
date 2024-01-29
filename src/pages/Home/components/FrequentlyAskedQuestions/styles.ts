@@ -6,6 +6,7 @@ export const QuestionsContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
 
     margin: 0 auto;
     cursor: pointer;
@@ -17,14 +18,15 @@ export const QuestionsContainer = styled.div`
         font-weight: 900;
     }
 
-    @media (max-width: 1400px) {
-        max-width: calc(100% - 4rem);   
+    div {
+        min-width: 65%;
     }
 `;
 
 export const QuestionText = styled.h3`
     font-size: 1.5rem;
     font-weight: 400;
+    text-align: start;
 `;
 
 export const QuestionsAndAnswersContainer = styled.div`
@@ -42,6 +44,7 @@ export const QuestionsAnswersBase = styled.div`
 export const QuestionContent = styled(QuestionsAnswersBase)`
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
 
     &:hover {
         background-color: rgb(65,65,65);

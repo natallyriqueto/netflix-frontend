@@ -8,15 +8,6 @@ export const HeaderContainer = styled.header`
     z-index: 999;
     top: 0;
 
-    nav {
-        max-width: calc(66.66666666666666% - 6rem);   
-        margin: auto;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     div {
         display: flex;
         align-items: center;
@@ -52,10 +43,25 @@ export const HeaderContainer = styled.header`
 
 `;
 
+export const Nav = styled.nav`
+    max-width: calc(66.66666666666666% - 6rem);   
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        max-width: calc(100% - 2rem);        
+    
+    }
+`;
+
 export const SignInButton = styled.button`
     background-color: ${props => props.theme.red};
-    font-weight: bold;
+    font-weight: 500;
     cursor: pointer;
+    font-size: 0.9rem;
 
     :hover {
         background: rgb(193, 17, 25);

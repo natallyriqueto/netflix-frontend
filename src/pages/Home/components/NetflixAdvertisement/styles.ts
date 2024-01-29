@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-
-
 export const AdvertisementContainer = styled.div`
     &>div:nth-child(even) {
         flex-direction: row-reverse;
@@ -9,7 +7,7 @@ export const AdvertisementContainer = styled.div`
 `;
 
 export const AdvertisementContent = styled.div`
-    padding: 7rem 30rem;
+    padding: 8rem 2rem; 
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -18,7 +16,7 @@ export const AdvertisementContent = styled.div`
     border-bottom: 8px solid ${props => props.theme['gray-600']};
   
     div {
-        flex-basis: 50%;
+        flex-basis: 30%;
 
         p { 
             margin-top: 1.5rem;
@@ -31,21 +29,26 @@ export const AdvertisementContent = styled.div`
             font-weight: 900;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+       
     }
-
-   
-    @media (max-width: 1000px) {
+    
+    @media (max-width: 1300px) {
         flex-wrap: wrap;
-        max-width: calc(100% - 4rem);
 
         div {
             flex-basis: 100%;
             text-align: center;
         }
 
+    }
+`;
+
+export const ImageContainer = styled.div`
+    display: flex;
+    justify-content: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 `;
