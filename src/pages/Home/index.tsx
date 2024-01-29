@@ -1,8 +1,8 @@
 import { Hero } from '@/components/Hero';
 import { Footer } from '@/components/Footer';
-import { FrequentlyAskedQuestions } from '@/pages/Home/components/FrequentlyAskedQuestions';
-import { Header } from '@/pages/Home/components/Header';
-import { NetflixAdvertisement } from '@/pages/Home/components/NetflixAdvertisement';
+import { FrequentlyAskedQuestions } from '@/components/FrequentlyAskedQuestions';
+import { Header } from '@/components/Header';
+import { NetflixAdvertisement } from '@/components/NetflixAdvertisement';
 import { HomeContainer } from './style';
 import { PriceTag } from '@/components/PriceTag';
 
