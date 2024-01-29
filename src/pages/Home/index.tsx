@@ -4,6 +4,7 @@ import { FrequentlyAskedQuestions } from '@/pages/Home/components/FrequentlyAske
 import { Header } from '@/pages/Home/components/Header';
 import { NetflixAdvertisement } from '@/pages/Home/components/NetflixAdvertisement';
 import { HomeContainer } from './style';
+import { PriceTag } from '@/components/PriceTag';
 
 export function Home() {
 
@@ -11,6 +12,7 @@ export function Home() {
 		<HomeContainer>
 			<Header />
 			<Hero />
+			<PriceTag />
 			<NetflixAdvertisement />
 			<FrequentlyAskedQuestions />
 			<Footer />

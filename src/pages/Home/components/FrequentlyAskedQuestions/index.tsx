@@ -5,7 +5,8 @@ import {
 	QuestionsAndAnswersContainer, 
 	QuestionContent, 
 	AnswerContent,
-	QuestionText
+	QuestionText,
+	QuestionsBox
 } from './styles';
 import { Plus, X } from 'phosphor-react';
 
@@ -54,7 +55,7 @@ export function FrequentlyAskedQuestions() {
 	return (
 		<QuestionsContainer>
 			<h2>Frequently Asked Questions</h2>
-			<div>
+			<QuestionsBox>
 				{
 					questionsAndAnswers.map(item => {
 						return (
@@ -72,7 +73,7 @@ export function FrequentlyAskedQuestions() {
 						);
 					})
 				}
-			</div>
+			</QuestionsBox>
 			<Register />
 		</QuestionsContainer>
 	);

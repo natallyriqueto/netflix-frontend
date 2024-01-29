@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const QuestionsContainer = styled.div`
-    padding: 4.5rem 0;    
+    padding: 4.5rem  1.5rem;   
 
     display: flex;
     flex-direction: column;
@@ -18,9 +18,18 @@ export const QuestionsContainer = styled.div`
         font-weight: 900;
     }
 
-    div {
-        min-width: 65%;
+    @media(max-width: 900px) {
+        padding: 0 2rem;
     }
+
+`;
+
+export const QuestionsBox = styled.div`
+    width: 70%;
+
+    @media(max-width: 900px) {
+        width: 100%;
+    } 
 `;
 
 export const QuestionText = styled.h3`
