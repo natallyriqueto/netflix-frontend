@@ -4,7 +4,7 @@ import {
 	ImageContainer
 } from './styles';
 import advertisementIMG from '@/assets/advertisement-tv.png';
-import devicesIMG from '@/assets/advertisement-tv.png';
+import devicesIMG from '@/assets/watch-everywhere-img.png';
 import profileIMG from '@/assets/profiles-img.png';
 import watchOfflineIMG from '@/assets/watch-offline-img.jpg';
 
