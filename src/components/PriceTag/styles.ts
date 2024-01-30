@@ -20,6 +20,10 @@ export const PriceTagContent = styled.div`
     margin: 0 4.6rem;
     color: white;
     padding: 1.3rem;
+
+    @media(max-width: 650px) {
+        margin: 0 2rem;
+    }
 `;
 
 export const TextContent = styled.div`

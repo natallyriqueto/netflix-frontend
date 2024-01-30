@@ -19,7 +19,7 @@ export const QuestionsContainer = styled.div`
     }
 
     @media(max-width: 900px) {
-        padding: 0 2rem;
+        padding: 2rem;
     }
 
 `;
