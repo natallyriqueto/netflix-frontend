@@ -59,7 +59,7 @@ export function FrequentlyAskedQuestions() {
 				{
 					questionsAndAnswers.map(item => {
 						return (
-							<QuestionsAndAnswersContainer>
+							<QuestionsAndAnswersContainer key={item.id}>
 								<QuestionContent key={item.id} onClick={() => handleToggle(item.id)}>
 									<QuestionText>{item.question}</QuestionText>
 									{isToggled && isToggledId == item.id ?  <X size={24} /> : <Plus size={24} />}
